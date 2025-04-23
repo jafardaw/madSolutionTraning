@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:madsolutionproject/Feture/Auth/login/presentation/veiw/widget/auth_redirect_text.dart';
+import 'package:madsolutionproject/Feture/Auth/presentation/veiw/widget/auth_redirect_text.dart';
 import 'package:madsolutionproject/core/constant.dart';
 import 'package:madsolutionproject/core/utils/styel.dart';
 import 'package:madsolutionproject/core/widget/custom_botton.dart';

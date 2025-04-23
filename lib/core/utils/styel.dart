@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:madsolutionproject/core/constant.dart';
 
 class AppTextStyles {
   static TextStyle calibri26NormalWhiteShadow = TextStyle(
@@ -52,11 +53,11 @@ class AppTextStyles {
     color: Colors.grey[800],
   );
 
-  static TextStyle calibri13RegularRed = TextStyle(
+  static TextStyle calibri18RegularWhite = TextStyle(
     fontFamily: 'Calibri',
-    fontSize: 13.sp,
-    fontWeight: FontWeight.w400,
-    color: Colors.redAccent,
+    fontSize: 18.sp,
+    fontWeight: FontWeight.bold,
+    color: colorWhite,
   );
 
   static TextStyle calibri13ItalicGrey600 = TextStyle(

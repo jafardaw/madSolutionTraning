@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:madsolutionproject/core/utils/styel.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({super.key, this.onTap, required this.text});
@@ -39,14 +40,7 @@ class CustomButton extends StatelessWidget {
               width: double.infinity,
               height: MediaQuery.of(context).size.width < 600 ? 50 : 55,
               child: Center(
-                child: Text(
-                  text,
-                  style: const TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                  ),
-                ),
+                child: Text(text, style: AppTextStyles.calibri18RegularWhite),
               ),
             ),
           ),

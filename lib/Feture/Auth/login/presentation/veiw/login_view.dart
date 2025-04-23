@@ -2,6 +2,8 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
+import 'package:madsolutionproject/Feture/Auth/login/presentation/veiw/widget/auth_redirect_text.dart';
 import 'package:madsolutionproject/core/constant.dart';
 import 'package:madsolutionproject/core/utils/styel.dart';
 import 'package:madsolutionproject/core/widget/custom_botton.dart';
@@ -13,21 +15,21 @@ class LoginView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        width: double.infinity,
-        height: double.infinity,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [colorBlue, colorWhite],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
+      body: SafeArea(
+        child: Container(
+          width: double.infinity,
+          height: double.infinity,
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [colorWhite, colorBlue],
+              begin: Alignment.bottomRight,
+              end: Alignment.topLeft,
+            ),
           ),
-        ),
-        child: SafeArea(
           child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 24.w),
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 40.verticalSpace,
                 Center(
@@ -35,47 +37,52 @@ class LoginView extends StatelessWidget {
                     animatedTexts: [
                       TypewriterAnimatedText(
                         "L  O  G  I  N ",
-                        speed: Duration(milliseconds: 200),
-                        textStyle: AppTextStyles.headline.copyWith(
-                          fontSize: 34.sp,
-                        ),
+                        speed: const Duration(milliseconds: 200),
+                        textStyle: AppTextStyles.calibri19NormalWhiteShadow
+                            .copyWith(fontSize: 34.sp),
                       ),
                     ],
                     totalRepeatCount: 1,
                   ),
                 ),
                 40.verticalSpace,
-                CustomTextField(
-                  hint: 'Email',
-                  label: Text('Email'),
-                  hintText: 'Enter your email',
-                  prefixIcon: const Icon(Icons.email_outlined),
-                  obscureText: false,
-                ).animate().fadeIn(duration: 800.ms).slideX(begin: -0.2),
-                CustomTextField(
-                  hint: 'Password',
-                  label: Text('Password'),
-                  hintText: 'Enter your password',
-                  prefixIcon: const Icon(Icons.lock_outline),
-                  obscureText: true,
-                ).animate().fadeIn(duration: 800.ms).slideX(begin: 0.2),
-
-                5.verticalSpace,
-                Align(
-                  alignment: Alignment.centerRight,
-                  child: TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      "Forgot Password?",
-                      style: TextStyle(
-                        color: colorblack,
-                        fontSize: 13.sp,
-                        fontStyle: FontStyle.italic,
-                      ),
-                    ),
-                  ),
+                Column(
+                  children: [
+                    CustomTextField(
+                      hint: 'Email',
+                      label: const Text('Email'),
+                      hintText: 'Enter your email',
+                      prefixIcon: const Icon(Icons.email_outlined),
+                      obscureText: false,
+                    ).animate().fadeIn(duration: 800.ms).slideX(begin: -0.2),
+                    24.verticalSpace,
+                    CustomTextField(
+                      hint: 'Password',
+                      label: const Text('Password'),
+                      hintText: 'Enter your password',
+                      prefixIcon: const Icon(Icons.lock_outline),
+                      obscureText: true,
+                    ).animate().fadeIn(duration: 800.ms).slideX(begin: 0.2),
+                  ],
                 ),
-                CustomButton(text: 'Login', onTap: () {}),
+                AuthRedirectText(
+                  message: "Forgt Password?",
+                  onTap: () {},
+                  alignmentGeometry: Alignment.centerRight,
+                ),
+                CustomButton(
+                  text: 'Login',
+                  onTap: () async {
+                    context.goNamed('register');
+                  },
+                ),
+                AuthRedirectText(
+                  alignmentGeometry: Alignment.center,
+                  message: "Create new account?   ",
+                  actionText: "Login",
+                  onTap: () {},
+                ),
+
                 30.horizontalSpace,
               ],
             ),

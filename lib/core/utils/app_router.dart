@@ -1,5 +1,6 @@
 import 'package:go_router/go_router.dart';
 import 'package:madsolutionproject/Feture/Auth/login/presentation/veiw/login_view.dart';
+import 'package:madsolutionproject/Feture/Auth/login/presentation/veiw/register_view.dart';
 import 'package:madsolutionproject/Feture/splash/splash_view.dart';
 
 final GoRouter router = GoRouter(
@@ -15,10 +16,10 @@ final GoRouter router = GoRouter(
       name: 'login',
       builder: (context, state) => const LoginView(),
     ),
-    // GoRoute(
-    //   path: '/register',
-    //   name: 'register',
-    //   builder: (context, state) => const RegisterView(),
-    // ),
+    GoRoute(
+      path: '/register',
+      name: 'register',
+      builder: (context, state) => const RegisterView(),
+    ),
   ],
 );

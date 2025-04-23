@@ -33,8 +33,10 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_animate: ^4.5.2
+  flutter_bloc: ^9.1.0
   flutter_screenutil: ^5.9.3
   go_router: ^15.1.1
+  lottie: ^3.3.1
   responsive_sizer: ^3.3.1
   shimmer: ^3.0.0
 
@@ -54,27 +56,19 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/image/
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/to/resolution-aware-images
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/to/asset-from-package
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
-  #
+    - assets/animation_1745402143645.json
+    - assets/font/
+     
+  fonts:
+    - family: Calibri
+      fonts:
+        - asset: assets/font/calibri-regular.ttf
+        - asset: assets/font/calibri-bold.ttf
+          weight: 700
+        - asset: assets/font/calibri-italic.ttf
+          style: italic 
+        - asset: assets/font/calibri-bold-italic.ttf   
+          weight: 700
+          style: italic
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package

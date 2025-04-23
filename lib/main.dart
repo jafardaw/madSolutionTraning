@@ -19,10 +19,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
+      theme: ThemeData(fontFamily: 'Calibri'),
       debugShowCheckedModeBanner: false,
 
       title: 'MAD Solution',
-      theme: ThemeData(primarySwatch: Colors.blue),
+
       routerConfig: router,
     );
   }

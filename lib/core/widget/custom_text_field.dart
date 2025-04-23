@@ -56,16 +56,9 @@ class _CustomTextFieldState extends State<CustomTextField> {
 
   @override
   Widget build(BuildContext context) {
-    // Get the screen size
     final Size screenSize = MediaQuery.of(context).size;
-
-    // Calculate padding dynamically based on screen width
-    final double horizontalPadding =
-        screenSize.width * 0.08; // 8% of screen width
-
-    // Adjust text size based on screen size (you can fine-tune this as needed)
-    final double textSize =
-        screenSize.width < 600 ? 14 : 16; // Smaller text for smaller screens
+    final double horizontalPadding = screenSize.width * 0.08;
+    final double textSize = screenSize.width < 600 ? 14 : 16;
 
     return Padding(
       padding: EdgeInsets.symmetric(horizontal: horizontalPadding),

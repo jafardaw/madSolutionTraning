@@ -29,6 +29,7 @@ class CustomButton extends StatelessWidget {
                 ),
                 boxShadow: [
                   BoxShadow(
+                    // ignore: deprecated_member_use
                     color: Colors.blueAccent.withOpacity(0.2),
                     spreadRadius: 2,
                     blurRadius: 8,

@@ -6,7 +6,6 @@ import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
 import 'package:madsolutionproject/core/constant.dart';
 import 'package:madsolutionproject/core/utils/styel.dart';
-import 'package:shimmer/shimmer.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});
@@ -20,6 +19,7 @@ class _SplashViewState extends State<SplashView> {
   void initState() {
     super.initState();
     Future.delayed(const Duration(seconds: 5), () {
+      // ignore: use_build_context_synchronously
       context.goNamed('login');
     });
   }
@@ -52,7 +52,7 @@ class _AnimatedText extends StatelessWidget {
     return SizedBox(
           height: 50.h,
           child: DefaultTextStyle(
-            style: AppTextStyles.calibri14RegularGrey300.copyWith(
+            style: AppTextStyles.calibri16BoldWhite.copyWith(
               color: const Color.fromARGB(255, 68, 106, 173),
             ),
             child: AnimatedTextKit(

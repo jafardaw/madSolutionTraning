@@ -151,5 +151,3 @@ class CategoriesHorizontalList extends StatelessWidget {
     );
   }
 }
-
-// باقي الكود (ProductCard و dummyProducts) يبقى كما هو

@@ -28,7 +28,7 @@ class _LoginViewState extends State<LoginView> {
           height: double.infinity,
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [colorWhite, colorBlue],
+              colors: [colorWhite, kpraimarycolorBlue],
               begin: Alignment.bottomRight,
               end: Alignment.topLeft,
             ),

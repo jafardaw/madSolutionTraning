@@ -1,5 +1,4 @@
-
-import 'package:madsolutionproject/core/utils/imag_gen.dart';
+import 'package:madsolutionproject/core/utils/images_gen.dart';
 
 class ProductModel {
   final int productId;
@@ -167,19 +166,41 @@ class ProductModel {
           'This product is our best product and we offer products at the best prices with appropriate quality',
       isSelected: false,
     ),
+    ProductModel(
+      productId: 5,
+      price: 24,
+      category: 'llll',
+      productName: 'MetaHane',
+      size: 'Medium',
+      rating: 4.4,
+      humidity: 36,
+      measuerement: '15 - 18',
+      imageURL: Assets.images6,
+      isFavorated: false,
+      decription:
+          'This product is our best product and we offer products at the best prices with appropriate quality',
+      isSelected: false,
+    ),
+  ];
+  final List<String> categories = const [
+    'All',
+    'Shops',
+    'Restaurants',
+    'Café',
+    'Fast Food',
+    'Bakery',
+    'Supermarket',
   ];
 
   //Get the favorated items
-  static List<ProductModel> getFavoritedProducts() {
-    List<ProductModel> travelList = ProductModel.productsList;
-    return travelList.where((element) => element.isFavorated == true).toList();
+  @override
+  @override
+  bool operator ==(Object other) {
+    if (identical(this, other)) return true;
+
+    return other is ProductModel && other.productId == productId;
   }
 
-  //Get the cart items
-  static List<ProductModel> addedToCartProducts() {
-    List<ProductModel> selectedProduct = ProductModel.productsList;
-    return selectedProduct
-        .where((element) => element.isSelected == true)
-        .toList();
-  }
+  @override
+  int get hashCode => productId.hashCode;
 }

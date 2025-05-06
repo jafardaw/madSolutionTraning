@@ -34,6 +34,18 @@ class Assets {
   /// assets/images/add-cart.png
   static const String imagesAddCart = "assets/images/add-cart.png";
 
+  /// Assets for imagesAvatar
+  /// assets/images/Avatar.png
+  static const String imagesAvatar = "assets/images/Avatar.png";
+
+  /// Assets for imagesAvatar2
+  /// assets/images/Avatar2.png
+  static const String imagesAvatar2 = "assets/images/Avatar2.png";
+
+  /// Assets for imagesAvatar3
+  /// assets/images/Avatar3.png
+  static const String imagesAvatar3 = "assets/images/Avatar3.png";
+
   /// Assets for imagesCodeScan
   /// assets/images/code-scan.png
   static const String imagesCodeScan = "assets/images/code-scan.png";
@@ -41,6 +53,10 @@ class Assets {
   /// Assets for imagesCodeScanTwo
   /// assets/images/code-scan-two.png
   static const String imagesCodeScanTwo = "assets/images/code-scan-two.png";
+
+  /// Assets for imagesCover
+  /// assets/images/Cover.png
+  static const String imagesCover = "assets/images/Cover.png";
 
   /// Assets for imagesDelevery
   /// assets/images/delevery.svg
@@ -55,9 +71,29 @@ class Assets {
   /// assets/images/favorited.png
   static const String imagesFavorited = "assets/images/favorited.png";
 
+  /// Assets for imagesFood Picture
+  /// assets/images/Food Picture.png
+  static const String imagesFoodPicture = "assets/images/Food Picture.png";
+
   /// Assets for imagesGoogle
   /// assets/images/google.png
   static const String imagesGoogle = "assets/images/google.png";
+
+  /// Assets for imagesImage 6
+  /// assets/images/image 6.png
+  static const String imagesImage6 = "assets/images/image 6.png";
+
+  /// Assets for imagesImage 7
+  /// assets/images/image 7.png
+  static const String imagesImage7 = "assets/images/image 7.png";
+
+  /// Assets for imagesImage 8
+  /// assets/images/image 8.png
+  static const String imagesImage8 = "assets/images/image 8.png";
+
+  /// Assets for imagesOnboarding
+  /// assets/images/Onboarding.png
+  static const String imagesOnboarding = "assets/images/Onboarding.png";
 
   /// Assets for imagesPhoto20240922230745
   /// assets/images/photo_2024-09-22_23-07-45.jpg
@@ -103,6 +139,18 @@ class Assets {
   /// Assets for imagesQuality
   /// assets/images/quality.svg
   static const String imagesQuality = "assets/images/quality.svg";
+
+  /// Assets for imagesRectangle 188
+  /// assets/images/Rectangle 188.png
+  static const String imagesRectangle188 = "assets/images/Rectangle 188.png";
+
+  /// Assets for imagesRectangle 196
+  /// assets/images/Rectangle 196.png
+  static const String imagesRectangle196 = "assets/images/Rectangle 196.png";
+
+  /// Assets for imagesRectangle 219
+  /// assets/images/Rectangle 219.png
+  static const String imagesRectangle219 = "assets/images/Rectangle 219.png";
 
   /// Assets for imagesResetPassword
   /// assets/images/reset-password.png

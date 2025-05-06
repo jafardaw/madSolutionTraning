@@ -30,7 +30,7 @@ class _RegisterViewState extends State<RegisterView> {
           height: double.infinity,
           decoration: BoxDecoration(
             gradient: LinearGradient(
-              colors: [colorWhite, colorBlue],
+              colors: [colorWhite, kpraimarycolorBlue],
               begin: Alignment.bottomRight,
               end: Alignment.topLeft,
             ),

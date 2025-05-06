@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
+import 'package:madsolutionproject/core/constant.dart';
 
 void showCustomSnackBar(
   BuildContext context,
   String message, {
-  Color color = Colors.blue, // اللون الأزرق هو الافتراضي الآن
+  Color color = kpraimarydarkBlue,
 }) {
   final snackBar = SnackBar(
     behavior: SnackBarBehavior.floating,
@@ -27,11 +28,11 @@ void showCustomSnackBar(
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 16),
         decoration: BoxDecoration(
-          color: color.withOpacity(0.95),
+          color: color.withValues(alpha: 0.95),
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.25),
+              color: kpraimaryblack.withValues(alpha: 0.25),
               blurRadius: 10,
               offset: const Offset(0, 4),
             ),

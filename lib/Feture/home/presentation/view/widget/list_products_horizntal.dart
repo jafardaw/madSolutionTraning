@@ -1,145 +1,131 @@
-import 'package:flutter/material.dart';
-import 'package:madsolutionproject/Feture/home/data/model/product_model.dart';
-import 'package:madsolutionproject/core/constant.dart';
-import 'package:madsolutionproject/core/utils/styel.dart';
+// class ItemWithListHorizntal extends StatefulWidget {
+//   const ItemWithListHorizntal({super.key, required this.productModel});
+//   final ProductModel productModel;
 
-class ListViewHorizental extends StatefulWidget {
-  const ListViewHorizental({super.key});
-  // final List<ProductModel> dummyProducts  ;
+//   @override
+//   State<ItemWithListHorizntal> createState() => _ItemWithListHorizntalState();
+// }
 
-  @override
-  State<ListViewHorizental> createState() => _ListViewCategoriesState();
-}
+// class _ItemWithListHorizntalState extends State<ItemWithListHorizntal> {
+//   @override
+//   Widget build(BuildContext context) {
+//     ProductModel productmodel = widget.productModel;
 
-class _ListViewCategoriesState extends State<ListViewHorizental> {
-  @override
-  Widget build(BuildContext context) {
-    List<ProductModel> productsList = ProductModel.productsList;
+//     bool toggleIsFavorated(bool isFavorited) {
+//       return !isFavorited;
+//     }
 
-    Size size = MediaQuery.of(context).size;
-    return SizedBox(
-      height: size.height * .3,
-      child: ListView.builder(
-        itemCount: productsList.length,
-        scrollDirection: Axis.horizontal,
-        itemBuilder: (BuildContext context, int index) {
-          return InkWell(
-            onTap: () {
-              // Navigator.push(
-              //     context,
-              //     PageTransition(
-              //         child: DetailPage(
-              //           productsId: productsList[index].productId,
-              //         ),
-              //         type: PageTransitionType.bottomToTop));
-            },
-            child: ItemWithListHorizntal(index: index),
-          );
-        },
-      ),
-    );
-  }
-}
+//     return Container(
+//       width: 200,
+//       margin: const EdgeInsets.symmetric(horizontal: 10),
+//       decoration: BoxDecoration(
+//         color: kpraimarywhite,
+//         borderRadius: BorderRadius.circular(20),
+//         boxShadow: [
+//           BoxShadow(color: kpraimaryblack, blurRadius: 10, spreadRadius: 2),
+//         ],
+//         border: Border.all(color: kpraimarylightGrey, width: 1),
+//       ),
+//       child: Stack(
+//         children: [
+//           // الخلفية الزرقاء
+//           Positioned.fill(
+//             child: Container(
+//               decoration: BoxDecoration(
+//                 color: kpraimaryprimaryBlue,
+//                 borderRadius: BorderRadius.circular(20),
+//                 gradient: LinearGradient(
+//                   begin: Alignment.topCenter,
+//                   end: Alignment.bottomCenter,
+//                   colors: [kpraimaryprimaryBlue, kpraimarycolorBlue],
+//                 ),
+//               ),
+//             ),
+//           ),
 
-class ItemWithListHorizntal extends StatefulWidget {
-  const ItemWithListHorizntal({super.key, required this.index});
-  final int index;
+//           Positioned(
+//             top: 10,
+//             right: 10,
+//             child: Container(
+//               height: 40,
+//               width: 40,
+//               decoration: BoxDecoration(
+//                 color: kpraimarywhite,
+//                 shape: BoxShape.circle,
+//                 boxShadow: [BoxShadow(color: kpraimaryblack, blurRadius: 5)],
+//               ),
+//               child: IconButton(
+//                 onPressed: () {
+//                   setState(() {
+//                     productmodel.isFavorated = toggleIsFavorated(
+//                       productmodel.isFavorated,
+//                     );
+//                   });
+//                 },
+//                 icon: Icon(
+//                   productmodel.isFavorated
+//                       ? Icons.favorite
+//                       : Icons.favorite_border,
+//                   color: kpraimaryprimaryBlue,
+//                   size: 20,
+//                 ),
+//               ),
+//             ),
+//           ),
 
-  @override
-  State<ItemWithListHorizntal> createState() => _ItemWithListHorizntalState();
-}
+//           Positioned(
+//             left: 30,
+//             right: 30,
+//             top: 40,
+//             bottom: 60,
+//             child: Image.asset(productmodel.imageURL, fit: BoxFit.contain),
+//           ),
 
-class _ItemWithListHorizntalState extends State<ItemWithListHorizntal> {
-  @override
-  Widget build(BuildContext context) {
-    List<ProductModel> productsList = ProductModel.productsList;
-    bool toggleIsFavorated(bool isFavorited) {
-      return !isFavorited;
-    }
+//           Positioned(
+//             bottom: 15,
+//             left: 15,
+//             child: Column(
+//               crossAxisAlignment: CrossAxisAlignment.start,
+//               children: [
+//                 Text(
+//                   productmodel.category,
+//                   style: TextStyle(color: kpraimarywhite, fontSize: 14),
+//                 ),
+//                 const SizedBox(height: 4),
+//                 Text(
+//                   productmodel.productName,
+//                   style: TextStyle(
+//                     color: kpraimarywhite,
+//                     fontSize: 16,
+//                     fontWeight: FontWeight.bold,
+//                   ),
+//                 ),
+//               ],
+//             ),
+//           ),
 
-    return Container(
-      width: 200,
-      margin: const EdgeInsets.symmetric(horizontal: 10),
-      decoration: BoxDecoration(
-        color: colorBlue,
-        borderRadius: BorderRadius.circular(20),
-      ),
-      child: Stack(
-        children: [
-          Positioned(
-            top: 10,
-            right: 20,
-            child: Container(
-              height: 50,
-              width: 50,
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(50),
-              ),
-              child: IconButton(
-                onPressed: () {
-                  setState(() {
-                    bool isFavorited = toggleIsFavorated(
-                      productsList[widget.index].isFavorated,
-                    );
-                    productsList[widget.index].isFavorated = isFavorited;
-                  });
-                },
-                icon: Icon(
-                  productsList[widget.index].isFavorated == true
-                      ? Icons.favorite
-                      : Icons.favorite_border,
-                  color: colorBlue,
-                ),
-                iconSize: 30,
-              ),
-            ),
-          ),
-          Positioned(
-            left: 50,
-            right: 50,
-            top: 50,
-            bottom: 50,
-            child: Image.asset(productsList[widget.index].imageURL),
-          ),
-          Positioned(
-            bottom: 15,
-            left: 20,
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  productsList[widget.index].category,
-                  style: const TextStyle(color: Colors.white70, fontSize: 16),
-                ),
-                Text(
-                  productsList[widget.index].productName,
-                  style: const TextStyle(
-                    color: Colors.white70,
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ],
-            ),
-          ),
-          Positioned(
-            bottom: 15,
-            right: 20,
-            child: Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 2),
-              decoration: BoxDecoration(
-                color: Colors.white,
-                borderRadius: BorderRadius.circular(20),
-              ),
-              child: Text(
-                r'$' + productsList[widget.index].price.toString(),
-                style: AppTextStyles.calibri16BoldWhite,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
+//           Positioned(
+//             bottom: 15,
+//             right: 15,
+//             child: Container(
+//               padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+//               decoration: BoxDecoration(
+//                 color: kpraimarywhite,
+//                 borderRadius: BorderRadius.circular(20),
+//                 boxShadow: [BoxShadow(color: kpraimaryblack, blurRadius: 5)],
+//               ),
+//               child: Text(
+//                 '\$${productmodel.price.toStringAsFixed(2)}',
+//                 style: TextStyle(
+//                   color: kpraimaryprimaryBlue,
+//                   fontWeight: FontWeight.bold,
+//                   fontSize: 14,
+//                 ),
+//               ),
+//             ),
+//           ),
+//         ],
+//       ),
+//     );
+//   }
+// }

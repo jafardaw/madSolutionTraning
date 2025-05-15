@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:madsolutionproject/core/utils/function/validation.dart';
+import 'package:madsolutionproject/core/util/function/validation.dart';
 import 'package:madsolutionproject/core/widget/custom_text_field.dart';
 
 class RegisterFields extends StatelessWidget {

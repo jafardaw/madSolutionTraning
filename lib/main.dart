@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:madsolutionproject/Feture/cart/presentation/manger/cart_cubit.dart';
-import 'package:madsolutionproject/core/utils/app_router.dart';
+import 'package:madsolutionproject/core/util/app_router.dart';
 
 void main() {
   runApp(

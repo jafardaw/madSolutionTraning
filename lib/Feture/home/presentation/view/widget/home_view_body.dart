@@ -4,7 +4,7 @@ import 'package:madsolutionproject/Feture/home/presentation/manger/fetch_and_fil
 import 'package:madsolutionproject/Feture/home/presentation/manger/fetch_and_filter_product_state.dart';
 import 'package:madsolutionproject/Feture/home/presentation/view/widget/categories_horizontal_list.dart';
 import 'package:madsolutionproject/Feture/home/presentation/view/widget/item_with_list_horizntal.dart';
-import 'package:madsolutionproject/core/utils/styel.dart';
+import 'package:madsolutionproject/core/util/styel.dart';
 
 class HomeViewBody extends StatelessWidget {
   const HomeViewBody({super.key});

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:madsolutionproject/Feture/profile/presentation/view/widget/profile_card_stat.dart';
 import 'package:madsolutionproject/Feture/profile/presentation/view/widget/profile_option.dart';
-import 'package:madsolutionproject/core/utils/images_gen.dart';
-import 'package:madsolutionproject/core/utils/styel.dart';
+import 'package:madsolutionproject/core/util/images_gen.dart';
+import 'package:madsolutionproject/core/util/styel.dart';
 
 class ProfileView extends StatelessWidget {
   const ProfileView({super.key});

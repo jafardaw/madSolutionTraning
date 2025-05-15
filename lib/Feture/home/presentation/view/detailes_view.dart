@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:madsolutionproject/Feture/home/presentation/view/widget/detailes_veiew_body.dart';
+import 'package:madsolutionproject/Feture/home/presentation/view/widget/widget_details_view/detailes_veiew_body.dart';
 import 'package:madsolutionproject/Feture/home/data/model/product_model.dart';
 
 class DetailesView extends StatelessWidget {

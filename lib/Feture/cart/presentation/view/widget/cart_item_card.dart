@@ -5,8 +5,8 @@ import 'package:go_router/go_router.dart';
 import 'package:madsolutionproject/Feture/cart/presentation/manger/cart_cubit.dart';
 import 'package:madsolutionproject/Feture/home/data/model/product_model.dart';
 import 'package:madsolutionproject/core/constant.dart';
-import 'package:madsolutionproject/core/utils/function/sh.dart';
-import 'package:madsolutionproject/core/utils/styel.dart';
+import 'package:madsolutionproject/core/util/function/sh.dart';
+import 'package:madsolutionproject/core/util/styel.dart';
 
 class CartItemCard extends StatelessWidget {
   final ProductModel product;

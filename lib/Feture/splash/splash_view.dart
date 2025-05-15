@@ -5,7 +5,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:lottie/lottie.dart';
 import 'package:madsolutionproject/core/constant.dart';
-import 'package:madsolutionproject/core/utils/styel.dart';
+import 'package:madsolutionproject/core/util/styel.dart';
 
 class SplashView extends StatefulWidget {
   const SplashView({super.key});

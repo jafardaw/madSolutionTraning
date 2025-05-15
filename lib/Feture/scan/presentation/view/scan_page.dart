@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:madsolutionproject/core/constant.dart';
-import 'package:madsolutionproject/core/utils/styel.dart';
+import 'package:madsolutionproject/core/util/styel.dart';
 
 class ScanPage extends StatefulWidget {
   const ScanPage({super.key});

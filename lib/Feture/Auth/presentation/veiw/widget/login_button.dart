@@ -13,7 +13,7 @@ class LoginButton extends StatelessWidget {
       text: 'Login',
       onTap: () {
         if (formKey.currentState!.validate()) {
-          context.goNamed('register');
+          context.goNamed('root_page');
         }
       },
     );

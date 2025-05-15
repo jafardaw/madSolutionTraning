@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:madsolutionproject/core/utils/styel.dart';
+import 'package:madsolutionproject/core/util/styel.dart';
 
 class ProfileCardStat extends StatelessWidget {
   final String title;

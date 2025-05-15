@@ -5,8 +5,8 @@ import 'package:go_router/go_router.dart';
 import 'package:madsolutionproject/Feture/cart/presentation/manger/cart_cubit.dart';
 import 'package:madsolutionproject/Feture/home/data/model/product_model.dart';
 import 'package:madsolutionproject/core/constant.dart';
-import 'package:madsolutionproject/core/utils/function/sh.dart';
-import 'package:madsolutionproject/core/utils/styel.dart';
+import 'package:madsolutionproject/core/util/function/sh.dart';
+import 'package:madsolutionproject/core/util/styel.dart';
 
 class ItemWithListHorizntal extends StatefulWidget {
   const ItemWithListHorizntal({super.key, required this.productModel});
@@ -29,7 +29,7 @@ class _ItemWithListHorizntalState extends State<ItemWithListHorizntal> {
           onTap: () {
             GoRouter.of(
               context,
-            ).push('/details_view', extra: widget.productModel);
+            ).push('/detailes_view', extra: widget.productModel);
           },
           child: Container(
             width: 200.w,

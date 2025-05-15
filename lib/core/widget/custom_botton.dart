@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:madsolutionproject/core/utils/styel.dart';
+import 'package:madsolutionproject/core/util/styel.dart';
 
 class CustomButton extends StatelessWidget {
   const CustomButton({super.key, this.onTap, required this.text});

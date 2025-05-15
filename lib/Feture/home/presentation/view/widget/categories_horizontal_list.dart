@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:madsolutionproject/Feture/home/presentation/manger/fetch_and_filter_product_cubit.dart';
 import 'package:madsolutionproject/core/constant.dart';
-import 'package:madsolutionproject/core/utils/styel.dart';
+import 'package:madsolutionproject/core/util/styel.dart';
 
 class CategoriesHorizontalList extends StatelessWidget {
   const CategoriesHorizontalList({

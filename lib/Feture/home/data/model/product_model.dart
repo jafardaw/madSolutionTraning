@@ -1,4 +1,4 @@
-import 'package:madsolutionproject/core/utils/images_gen.dart';
+import 'package:madsolutionproject/core/util/images_gen.dart';
 
 class ProductModel {
   final int productId;

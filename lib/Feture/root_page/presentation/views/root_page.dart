@@ -5,7 +5,7 @@ import 'package:madsolutionproject/Feture/home/presentation/view/home_view.dart'
 import 'package:madsolutionproject/Feture/profile/presentation/view/profile_view.dart';
 import 'package:madsolutionproject/Feture/scan/presentation/view/scan_page.dart';
 import 'package:madsolutionproject/core/constant.dart';
-import 'package:madsolutionproject/core/utils/images_gen.dart';
+import 'package:madsolutionproject/core/util/images_gen.dart';
 import 'package:page_transition/page_transition.dart';
 
 class RootPage extends StatefulWidget {

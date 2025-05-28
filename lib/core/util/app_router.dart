@@ -7,11 +7,16 @@ import 'package:madsolutionproject/Feture/home/data/model/product_model.dart';
 import 'package:madsolutionproject/Feture/home/presentation/view/home_view.dart';
 import 'package:madsolutionproject/Feture/root_page/presentation/views/root_page.dart';
 import 'package:madsolutionproject/Feture/splash/splash_view.dart';
+import 'package:madsolutionproject/test.dart';
 
 final GoRouter router = GoRouter(
   initialLocation: '/',
   routes: [
-    GoRoute(path: '/', name: 'splash', builder: (context, state) => SplashView()),
+    GoRoute(
+      path: '/',
+      name: 'splash',
+      builder: (context, state) => ThemeSwitcherPage(),
+    ),
     GoRoute(
       path: '/login',
       name: 'login',

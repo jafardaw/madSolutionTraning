@@ -8,5 +8,9 @@ class HiveHelper {
     cartBox = await Hive.openBox<ProductModel>('cartBox');
   }
 
+  static Future<void> initThem() async {
+    await Hive.openBox<bool>('theme_preferences');
+  }
+
   static Box<ProductModel> getCartBox() => cartBox;
 }

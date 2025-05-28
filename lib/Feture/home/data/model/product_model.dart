@@ -1,33 +1,89 @@
 import 'package:madsolutionproject/core/util/images_gen.dart';
+import 'package:hive/hive.dart';
 
-class ProductModel {
+part 'product_model.g.dart'; // هذا الملف سيتولد تلقائيًا
+
+@HiveType(typeId: 0)
+class ProductModel extends HiveObject {
+  @HiveField(0)
   final int productId;
+
+  @HiveField(1)
   final int price;
+
+  @HiveField(2)
   final String size;
+
+  @HiveField(3)
   final double rating;
+
+  @HiveField(4)
   final int humidity;
+
+  @HiveField(5)
   final String measuerement;
+
+  @HiveField(6)
   final String category;
+
+  @HiveField(7)
   final String productName;
+
+  @HiveField(8)
   final String imageURL;
+
+  @HiveField(9)
   bool isFavorated;
+
+  @HiveField(10)
   final String decription;
+
+  @HiveField(11)
   bool isSelected;
 
   ProductModel({
     required this.productId,
     required this.price,
-    required this.category,
-    required this.productName,
     required this.size,
     required this.rating,
     required this.humidity,
     required this.measuerement,
+    required this.category,
+    required this.productName,
     required this.imageURL,
     required this.isFavorated,
     required this.decription,
     required this.isSelected,
   });
+
+  // class ProductModel {
+  //   final int productId;
+  //   final int price;
+  //   final String size;
+  //   final double rating;
+  //   final int humidity;
+  //   final String measuerement;
+  //   final String category;
+  //   final String productName;
+  //   final String imageURL;
+  //   bool isFavorated;
+  //   final String decription;
+  //   bool isSelected;
+
+  //   ProductModel({
+  //     required this.productId,
+  //     required this.price,
+  //     required this.category,
+  //     required this.productName,
+  //     required this.size,
+  //     required this.rating,
+  //     required this.humidity,
+  //     required this.measuerement,
+  //     required this.imageURL,
+  //     required this.isFavorated,
+  //     required this.decription,
+  //     required this.isSelected,
+  //   });
 
   //List of Products
   static List<ProductModel> productsList = [

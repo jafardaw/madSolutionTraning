@@ -11,11 +11,7 @@ import 'package:madsolutionproject/Feture/splash/splash_view.dart';
 final GoRouter router = GoRouter(
   initialLocation: '/',
   routes: [
-    GoRoute(
-      path: '/',
-      name: 'splash',
-      builder: (context, state) => SplashView(),
-    ),
+    GoRoute(path: '/', name: 'splash', builder: (context, state) => SplashView()),
     GoRoute(
       path: '/login',
       name: 'login',

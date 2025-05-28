@@ -8,8 +8,19 @@ import 'package:madsolutionproject/core/constant.dart';
 
 import 'package:madsolutionproject/core/util/styel.dart';
 
-class CartView extends StatelessWidget {
+class CartView extends StatefulWidget {
   const CartView({super.key});
+
+  @override
+  State<CartView> createState() => _CartViewState();
+}
+
+class _CartViewState extends State<CartView> {
+  @override
+  void initState() {
+    super.initState();
+    context.read<CartCubit>().loadCartItems();
+  }
 
   @override
   Widget build(BuildContext context) {

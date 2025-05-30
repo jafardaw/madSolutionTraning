@@ -1,12 +1,15 @@
 import 'package:go_router/go_router.dart';
 import 'package:madsolutionproject/Feture/Auth/presentation/veiw/login_view.dart';
 import 'package:madsolutionproject/Feture/Auth/presentation/veiw/register_view.dart';
+import 'package:madsolutionproject/Feture/figma/RoleSelectionScreen/presentation/view/widget/roleselection_screen.dart';
+import 'package:madsolutionproject/Feture/figma/auth/login/presentation/view/login_view_figma.dart';
 import 'package:madsolutionproject/Feture/home/presentation/view/detailes_view.dart';
 import 'package:madsolutionproject/Feture/profile/presentation/view/profile_view.dart';
 import 'package:madsolutionproject/Feture/home/data/model/product_model.dart';
 import 'package:madsolutionproject/Feture/home/presentation/view/home_view.dart';
 import 'package:madsolutionproject/Feture/root_page/presentation/views/root_page.dart';
 import 'package:madsolutionproject/Feture/splash/splash_view.dart';
+import 'package:madsolutionproject/Feture/figma/splashfigma/presentation/view/splash_view_figma.dart';
 import 'package:madsolutionproject/test.dart';
 
 final GoRouter router = GoRouter(
@@ -15,7 +18,7 @@ final GoRouter router = GoRouter(
     GoRoute(
       path: '/',
       name: 'splash',
-      builder: (context, state) => ThemeSwitcherPage(),
+      builder: (context, state) => SplashViewFigma(),
     ),
     GoRoute(
       path: '/login',
@@ -50,6 +53,11 @@ final GoRouter router = GoRouter(
 
         return DetailesView(productModel: productModel);
       },
+    ),
+    GoRoute(
+      path: '/splash_view_figma',
+      name: 'splash_view_figma',
+      builder: (context, state) => const SplashViewFigma(),
     ),
   ],
 );

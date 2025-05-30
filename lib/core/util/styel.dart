@@ -1,9 +1,105 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class AppTextStyles {
-  // Calibri font styles
+  static TextStyle outfitBoldWhite(BuildContext context, {double? fontSize}) {
+    return GoogleFonts.outfit(
+      fontWeight: FontWeight.w700,
+      color: Colors.white,
+      fontSize: fontSize ?? 16.sp,
+    );
+  }
+
+  static TextStyle outfitRegularWhite(
+    BuildContext context, {
+    double? fontSize,
+  }) {
+    return GoogleFonts.outfit(
+      fontWeight: FontWeight.w400,
+      color: Colors.white,
+      fontSize: fontSize ?? 14.sp,
+    );
+  }
+
+  static TextStyle outfitMediumWhite(BuildContext context, {double? fontSize}) {
+    return GoogleFonts.outfit(
+      fontWeight: FontWeight.w500,
+      color: Colors.white,
+      fontSize: fontSize ?? 15.sp,
+    );
+  }
+
+  static TextStyle outfitSemiBoldWhite(
+    BuildContext context, {
+    double? fontSize,
+  }) {
+    return GoogleFonts.outfit(
+      fontWeight: FontWeight.w600,
+      color: Colors.white,
+      fontSize: fontSize ?? 16.sp,
+    );
+  }
+
+  static TextStyle headingLarge(BuildContext context) {
+    return GoogleFonts.outfit(
+      fontWeight: FontWeight.w700,
+      color: Colors.white,
+      fontSize: 24.sp,
+    );
+  }
+
+  static TextStyle headingMedium(BuildContext context) {
+    return GoogleFonts.outfit(
+      fontWeight: FontWeight.w600,
+      color: Colors.white,
+      fontSize: 20.sp,
+    );
+  }
+
+  static TextStyle bodySmall(BuildContext context) {
+    return GoogleFonts.outfit(
+      fontWeight: FontWeight.w400,
+      color: Colors.white,
+      fontSize: 12.sp,
+    );
+  }
+
+  static TextStyle nunitoTextStyle(BuildContext context, {double? fontSize}) {
+    return GoogleFonts.nunito(
+      fontWeight: FontWeight.w700,
+      color: Color(0xFF2563EB),
+      fontSize: fontSize ?? 16.sp,
+    );
+  }
+
+  static TextStyle nunitoTextWhiteStyle(
+    BuildContext context, {
+    double? fontSize,
+  }) {
+    return GoogleFonts.nunito(
+      fontWeight: FontWeight.w400,
+      color: Colors.white,
+      fontSize: fontSize ?? 15.sp,
+    );
+  }
+
+  static TextStyle robotTextWhiteStyle(
+    BuildContext context, {
+    double? fontSize,
+  }) {
+    return GoogleFonts.roboto(
+      fontWeight: FontWeight.w400,
+      color: Colors.white,
+      fontSize: fontSize ?? 15.sp,
+    );
+  }
+
+  ///////////////////////////////////////////////
+  ///
+  ///
+  ///////////////
   static TextStyle calibri26NormalWhiteShadow = TextStyle(
     fontFamily: 'Calibri',
     fontSize: 26.0.sp,

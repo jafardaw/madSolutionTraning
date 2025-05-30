@@ -22,8 +22,7 @@ void main() async {
 
   runApp(
     ScreenUtilInit(
-      designSize: const Size(375, 812),
-      minTextAdapt: true,
+      designSize: const Size(360, 720),
       splitScreenMode: true,
       builder: (context, child) => child!,
       child: const MyApp(),
@@ -56,7 +55,8 @@ class MyApp extends StatelessWidget {
               fontFamily: 'Calibri',
               brightness: Brightness.dark,
             ),
-            themeMode: isDark ? ThemeMode.dark : ThemeMode.light,
+            themeMode: ThemeMode.dark,
+            // isDark ? ThemeMode.dark : ThemeMode.light,
             debugShowCheckedModeBanner: false,
             title: 'MAD Solution',
             routerConfig: router,

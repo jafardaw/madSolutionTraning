@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
       ],
       child: BlocBuilder<ThemeCubit, ThemeState>(
         builder: (context, state) {
-          final isDark = state is ThemeLoaded ? state.isDark : false;
+          // final isDark = state is ThemeLoaded ? state.isDark : false;
 
           return MaterialApp.router(
             theme: ThemeData(
@@ -59,7 +59,7 @@ class MyApp extends StatelessWidget {
             // isDark ? ThemeMode.dark : ThemeMode.light,
             debugShowCheckedModeBanner: false,
             title: 'MAD Solution',
-            routerConfig: router,
+            routerConfig: AppRoutes.router,
           );
         },
       ),

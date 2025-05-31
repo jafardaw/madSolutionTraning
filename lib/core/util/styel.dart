@@ -109,7 +109,6 @@ class AppTextStyles {
       Shadow(blurRadius: 10.0, color: Colors.blueAccent, offset: Offset(0, 0)),
     ],
   );
-
   static TextStyle calibri19NormalWhiteShadow = TextStyle(
     fontFamily: 'Calibri',
     fontSize: 19.sp,

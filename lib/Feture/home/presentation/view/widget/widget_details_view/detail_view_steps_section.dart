@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:madsolutionproject/Feture/home/presentation/view/widget/widget_details_view/DetailViewStepItem.dart';
+import 'package:madsolutionproject/Feture/home/presentation/view/widget/widget_details_view/detail_view_step_item.dart';
 import 'package:madsolutionproject/core/util/styel.dart';
 
 class DetailViewStepsSection extends StatelessWidget {

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
 import 'package:madsolutionproject/Feture/cart/presentation/manger/cart_cubit.dart';
 import 'package:madsolutionproject/Feture/home/data/model/product_model.dart';
 import 'package:madsolutionproject/core/constant.dart';
+import 'package:madsolutionproject/core/util/app_router.dart';
 import 'package:madsolutionproject/core/util/function/sh.dart';
 import 'package:madsolutionproject/core/util/styel.dart';
 
@@ -27,9 +27,14 @@ class _ItemWithListHorizntalState extends State<ItemWithListHorizntal> {
 
         return GestureDetector(
           onTap: () {
-            GoRouter.of(
+            // GoRouter.of(
+            //   context,
+            // ).push('/detailes_view', extra: widget.productModel);
+            AppRoutes.pushNamed(
               context,
-            ).push('/detailes_view', extra: widget.productModel);
+              AppRoutes.detailsView,
+              extra: widget.productModel,
+            );
           },
           child: Container(
             width: 200.w,

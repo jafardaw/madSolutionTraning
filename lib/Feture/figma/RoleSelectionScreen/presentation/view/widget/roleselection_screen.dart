@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:madsolutionproject/Feture/figma/RoleSelectionScreen/presentation/view/widget/buildr_role_selection_card.dart';
+import 'package:madsolutionproject/core/util/app_router.dart';
 import 'package:madsolutionproject/core/util/styel.dart';
 import 'package:madsolutionproject/core/utils/images_gen.dart';
 
@@ -33,7 +34,6 @@ class RoleSelectionScreen extends StatelessWidget {
                     TextButton(
                       onPressed: () {
                         // Handle Skip action
-                        print('Skip pressed');
                       },
                       child: Text(
                         'Skip',
@@ -42,8 +42,7 @@ class RoleSelectionScreen extends StatelessWidget {
                     ),
                     TextButton(
                       onPressed: () {
-                        // Handle Sign in action
-                        print('Sign in pressed');
+                        AppRoutes.goNamed(context, AppRoutes.loginViewFigma);
                       },
                       child: Text(
                         'Sign in',
@@ -62,9 +61,7 @@ class RoleSelectionScreen extends StatelessWidget {
                         context,
                         image: Assets.imagesSearchIcon,
                         text: 'I\'m a freelancer',
-                        onTap: () {
-                          print('Freelancer selected');
-                        },
+                        onTap: () {},
                       ),
                     ),
                     const SizedBox(width: 20),
@@ -74,9 +71,7 @@ class RoleSelectionScreen extends StatelessWidget {
                         image: Assets.imagesEmailIcon,
                         // Assets.imagesFrame12,
                         text: 'I\'m a client',
-                        onTap: () {
-                          print('Client selected');
-                        },
+                        onTap: () {},
                       ),
                     ),
                   ],

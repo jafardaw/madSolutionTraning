@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:madsolutionproject/Feture/them/presentation/manger/theme_cubit.dart';
 import 'package:madsolutionproject/Feture/them/presentation/view/widget/switch_them.dart';
 
 class ThemeSwitcherPage extends StatelessWidget {

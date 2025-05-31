@@ -58,7 +58,7 @@ class _RootPageState extends State<RootPage> {
     return AnimatedBottomNavigationBar(
       splashColor: kpraimarycolorBlue,
       activeColor: kpraimarycolorBlue,
-      inactiveColor: Colors.black.withOpacity(.5),
+      inactiveColor: kpraimaryblack.withValues(alpha: .5),
       icons: iconList,
       activeIndex: _bottomNavIndex,
       gapLocation: GapLocation.center,

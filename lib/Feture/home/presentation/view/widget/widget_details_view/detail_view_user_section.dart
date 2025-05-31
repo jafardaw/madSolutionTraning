@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:madsolutionproject/Feture/home/data/model/product_model.dart';
+import 'package:madsolutionproject/core/util/app_router.dart';
 import 'package:madsolutionproject/core/util/styel.dart';
 
 class DetailViewUserSection extends StatelessWidget {
@@ -12,7 +12,8 @@ class DetailViewUserSection extends StatelessWidget {
       children: [
         GestureDetector(
           onTap: () {
-            GoRouter.of(context).push('/profile_view');
+            // GoRouter.of(context).push('/profile_view');
+            AppRoutes.pushNamed(context, AppRoutes.profileView);
           },
           child: CircleAvatar(
             radius: 25,

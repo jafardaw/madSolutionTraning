@@ -20,7 +20,7 @@ Widget buildRoleSelectionCard(
         border: Border.all(color: kpraimarywhite, width: 2),
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.1),
+            color: kpraimaryblack.withValues(alpha: 0.1),
             blurRadius: 6,
             offset: const Offset(0, 2),
           ),

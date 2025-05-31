@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:madsolutionproject/Feture/home/presentation/view/widget/widget_details_view/detailes_veiew_body.dart';
+
 import 'package:madsolutionproject/core/constant.dart';
 import 'package:madsolutionproject/core/util/styel.dart';
 

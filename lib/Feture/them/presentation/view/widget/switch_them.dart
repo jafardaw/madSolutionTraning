@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:madsolutionproject/Feture/them/presentation/manger/theme_cubit.dart';
+import 'package:madsolutionproject/core/constant.dart';
 
 Widget buildThemeSwitchTile(BuildContext context) {
   return BlocBuilder<ThemeCubit, ThemeState>(
@@ -26,8 +27,8 @@ Widget buildThemeSwitchTile(BuildContext context) {
             BoxShadow(
               color:
                   isDark
-                      ? Colors.black.withOpacity(0.3)
-                      : Colors.blue.withOpacity(0.2),
+                      ? kpraimaryblack.withValues(alpha: 0.3)
+                      : kpraimarydarkBlue.withValues(alpha: 0.2),
               blurRadius: 10,
               spreadRadius: 1,
               offset: const Offset(0, 3),
@@ -42,8 +43,8 @@ Widget buildThemeSwitchTile(BuildContext context) {
               borderRadius: BorderRadius.circular(15),
               splashColor:
                   isDark
-                      ? Colors.amber.withOpacity(0.2)
-                      : Colors.blue.withOpacity(0.2),
+                      ? Colors.amber.withValues(alpha: 0.2)
+                      : Colors.blue.withValues(alpha: 0.2),
               highlightColor: Colors.transparent,
               onTap: () => context.read<ThemeCubit>().toggleTheme(),
               child: Padding(
@@ -106,9 +107,11 @@ Widget buildThemeSwitchTile(BuildContext context) {
                         value: isDark,
                         onChanged:
                             (value) => context.read<ThemeCubit>().toggleTheme(),
-                        activeTrackColor: Colors.amber.withOpacity(0.4),
+                        activeTrackColor: Colors.amber.withValues(alpha: 0.4),
                         activeColor: Colors.amber[300],
-                        inactiveTrackColor: Colors.blueGrey.withOpacity(0.3),
+                        inactiveTrackColor: Colors.blueGrey.withValues(
+                          alpha: 0.3,
+                        ),
                         inactiveThumbColor: Colors.blue[600],
                         thumbIcon: WidgetStateProperty.resolveWith<Icon?>(
                           (states) => Icon(

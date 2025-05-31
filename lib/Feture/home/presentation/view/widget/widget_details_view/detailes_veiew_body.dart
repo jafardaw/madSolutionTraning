@@ -4,9 +4,9 @@ import 'package:madsolutionproject/Feture/home/data/model/product_model.dart';
 import 'package:madsolutionproject/Feture/home/presentation/view/widget/widget_details_view/detail_view_back_button.dart';
 import 'package:madsolutionproject/Feture/home/presentation/view/widget/widget_details_view/detail_view_description_section.dart';
 import 'package:madsolutionproject/Feture/home/presentation/view/widget/widget_details_view/detail_view_header_section.dart';
-import 'package:madsolutionproject/Feture/home/presentation/view/widget/widget_details_view/detail_viewIngredientsSection.dart';
-import 'package:madsolutionproject/Feture/home/presentation/view/widget/widget_details_view/DetailViewStepsSection.dart';
-import 'package:madsolutionproject/Feture/home/presentation/view/widget/widget_details_view/DetailViewUserSection.dart';
+import 'package:madsolutionproject/Feture/home/presentation/view/widget/widget_details_view/detail_view_ingredients_section.dart';
+import 'package:madsolutionproject/Feture/home/presentation/view/widget/widget_details_view/detail_view_steps_section.dart';
+import 'package:madsolutionproject/Feture/home/presentation/view/widget/widget_details_view/detail_view_user_section.dart';
 import 'package:madsolutionproject/core/constant.dart';
 
 class DetailesViewBody extends StatelessWidget {

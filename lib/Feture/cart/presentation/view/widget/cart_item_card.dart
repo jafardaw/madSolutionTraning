@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:go_router/go_router.dart';
 import 'package:madsolutionproject/Feture/cart/presentation/manger/cart_cubit.dart';
 import 'package:madsolutionproject/Feture/home/data/model/product_model.dart';
 import 'package:madsolutionproject/core/constant.dart';
+import 'package:madsolutionproject/core/util/app_router.dart';
 import 'package:madsolutionproject/core/util/function/sh.dart';
 import 'package:madsolutionproject/core/util/styel.dart';
 
@@ -17,7 +17,8 @@ class CartItemCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        GoRouter.of(context).push('/detailes_view', extra: product);
+        // GoRouter.of(context).push('/detailes_view', extra: product);
+        AppRoutes.pushNamed(context, AppRoutes.detailsView, extra: product);
       },
       child: Container(
         width: 200.w,

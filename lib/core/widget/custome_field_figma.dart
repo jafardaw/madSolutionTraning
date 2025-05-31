@@ -101,7 +101,7 @@ class CustomTextFieldFigmaState extends State<CustomTextFieldFigma> {
           hintStyle:
               widget.hintStyle?.copyWith(fontSize: textSize) ??
               TextStyle(fontSize: textSize),
-          fillColor: Colors.white.withOpacity(0.05),
+          fillColor: kpraimarywhite.withValues(alpha: 0.05),
           filled: true,
           enabledBorder: buildBorder(),
           border: buildBorder(),
